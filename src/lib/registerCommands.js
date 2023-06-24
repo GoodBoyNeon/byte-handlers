@@ -5,6 +5,10 @@ import { importDefault } from "../helpers/importDefault.js";
 const ENVIRONMENT = process.env.NODE_ENV;
 const DEV_GUILD_ID = process.env.DEV_GUILD_ID;
 
+/**
+ *
+ * @returns {string[]}
+ */
 const getApplicationCommands = async () => {
   const commands = new Array();
   const baseDirPath = `./src/commands/application`;
