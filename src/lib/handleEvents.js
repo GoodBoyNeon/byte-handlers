@@ -23,6 +23,7 @@ export const handleEvents = async () => {
     const event = await importDefault(`../events/${eventFile}`);
     try {
       // const event = require(eventFile);
+      console.log(event.name);
       const listener = (...args) => event.run(...args, client);
       event.once
         ? client.once(event.name, listener)
