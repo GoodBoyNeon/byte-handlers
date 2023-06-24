@@ -35,7 +35,6 @@ const messageCreate = {
 
   run: (message, client) => {
     const mention = `<@${client.id}>`;
-    console.log(message.content);
     const isCommand =
       message.content.startsWith(prefix) || message.content.startsWith(mention);
 
